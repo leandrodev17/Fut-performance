@@ -6,4 +6,4 @@ Projeto Flutter
 - Inversion dependency
 
 ## Sobre o projeto
-Objetivo desse projeto é gerar um aplicativo android para auxiliar e mensurar o resultados de praticantes do esporte futebol, calculando numeros simples e cliando um historico de jogos.
+Objetivo desse projeto é gerar um aplicativo android para auxiliar e mensurar o resultados de praticantes do esporte futebol, calculando numeros simples e criando um historico de jogos.
