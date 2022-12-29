@@ -76,7 +76,7 @@ class _PerformancePageState extends State<PerformancePage> {
                       left: 0,
                     ),
                     child: const Text(
-                      'Todal de Partidas jogadas',
+                      'Total de Partidas jogadas',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
@@ -110,7 +110,7 @@ class _PerformancePageState extends State<PerformancePage> {
                         margin: const EdgeInsets.only(
                           left: 10,
                         ),
-                        child: const Text('Todal de Gols feitos',
+                        child: const Text('Total de Gols feitos',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ))),
@@ -141,7 +141,7 @@ class _PerformancePageState extends State<PerformancePage> {
                         margin: const EdgeInsets.only(
                           left: 10,
                         ),
-                        child: const Text('Todal de Assistêcias',
+                        child: const Text('Total de Assistêcias',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ))),
@@ -167,7 +167,7 @@ class _PerformancePageState extends State<PerformancePage> {
                 ),
                 child: const Text('Historico de partidas', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange))),
             SizedBox(
-              height: 300,
+              height: MediaQuery.of(context).size.width * 0.25,
               child: ListView.builder(
                   itemCount: widget.performanceController.matches.length,
                   scrollDirection: Axis.vertical,
@@ -179,10 +179,8 @@ class _PerformancePageState extends State<PerformancePage> {
                           widget.performanceController.matches[index].date,
                           style: const TextStyle(color: Colors.orange, fontSize: 15),
                         ),
-                        subtitle:Text(
-                            'Incio: ${widget.performanceController.matches[index].startTime} - Final: ${widget.performanceController.matches[index].endTime}'),
-                        title: Text(
-                            '${widget.performanceController.matches[index].goals} Gols - ${widget.performanceController.matches[index].assists} Assistências'));
+                        subtitle:Text('Incio: ${widget.performanceController.matches[index].startTime} - Final: ${widget.performanceController.matches[index].endTime}'),
+                        title: Text('${widget.performanceController.matches[index].goals} Gols - ${widget.performanceController.matches[index].assists} Assistências'));
                   }),
             ),
           ],
